@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         cuda-cusolver-dev-9-0 \
         cuda-cusparse-dev-9-0 \
         curl=7.47.0-1ubuntu2.12 \
-        wget=1.17.1-1ubuntu1.4 \
+        wget=1.17.1-1ubuntu1.5 \
         vim=2:7.4.1689-3ubuntu1.2 \
         git=1:2.7.4-0ubuntu1.6 \
         libcudnn7=7.1.4.18-1+cuda9.0 \
