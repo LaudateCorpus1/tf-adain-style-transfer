@@ -80,7 +80,7 @@ RUN rm -rf models && mkdir models && cd models && wget https://s3-us-west-2.amaz
 
 RUN cd models && wget https://s3-us-west-2.amazonaws.com/deepai-opensource-codebases-models/tensorflow-fast-style-transfer/vgg19_weights_normalized.h5
 
-RUN pip3 install ai-integration==1.0.6
+RUN pip3 install ai-integration==1.0.7
 
 ENTRYPOINT ["python3", "entrypoint.py"]
 
