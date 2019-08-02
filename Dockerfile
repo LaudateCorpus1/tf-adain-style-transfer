@@ -2,7 +2,7 @@ FROM nvidia/cuda:9.0-base-ubuntu16.04
 
 # install libraries for python3, CUDA, cuDNN, plus utilities git, vim, wget, (un)zip, etc.
 RUN apt-get update && apt-get install -y --no-install-recommends \
-        build-essential=12.1ubuntu2 \
+        build-essential \
         cuda-command-line-tools-9-0 \
         cuda-cublas-dev-9-0 \
         cuda-cudart-dev-9-0 \
@@ -10,33 +10,30 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         cuda-curand-dev-9-0 \
         cuda-cusolver-dev-9-0 \
         cuda-cusparse-dev-9-0 \
-        curl=7.47.0-1ubuntu2.12 \
-        wget=1.17.1-1ubuntu1.5 \
-        vim=2:7.4.1689-3ubuntu1.2 \
-        git=1:2.7.4-0ubuntu1.6 \
+        curl \
+        wget \
         libcudnn7=7.1.4.18-1+cuda9.0 \
         libcudnn7-dev=7.1.4.18-1+cuda9.0 \
-        libfreetype6-dev=2.6.1-0.1ubuntu2.3 \
-        libhdf5-serial-dev=1.8.16+docs-4ubuntu1.1 \
-        libpng12-dev=1.2.54-1ubuntu1.1 \
-        libzmq3-dev=4.1.4-7 \
-        libopencv-dev=2.4.9.1+dfsg-1.5ubuntu1.1 \
-        pkg-config=0.29.1-0ubuntu1 \
-        libzmq3-dev=4.1.4-7 \
-        python3-pip=8.1.1-2ubuntu0.4 \
-        python3-dev=3.5.1-3 \
-        python3-setuptools=20.7.0-1 \
-        python3-tk=3.5.1-1 \
-        rsync=3.1.1-3ubuntu1.2 \
-        software-properties-common=0.96.20.8 \
-        unzip=6.0-20ubuntu1 \
-        zip=3.0-11 \
-        zlib1g-dev=1:1.2.8.dfsg-2ubuntu4.1 \
-        cmake=3.5.1-1ubuntu3 \
-        libreadline-dev=6.3-8ubuntu2 \
-        graphicsmagick=1.3.23-1ubuntu0.1 \
-        libgtk-3-dev=3.18.9-1ubuntu3.3 \
-        libboost-all-dev=1.58.0.1ubuntu1 \
+        libfreetype6-dev \
+        libhdf5-serial-dev \
+        libpng12-dev \
+        libzmq3-dev \
+        libopencv-dev \
+        pkg-config \
+        libzmq3-dev \
+        python3-pip \
+        python3-dev \
+        python3-setuptools \
+        python3-tk \
+        software-properties-common \
+        unzip \
+        zip \
+        zlib1g-dev \
+        cmake \
+        libreadline-dev \
+        graphicsmagick \
+        libgtk-3-dev \
+        libboost-all-dev \
         && \
     rm -rf /var/lib/apt/lists/* && \
     find /usr/local/cuda-9.0/lib64/ -type f -name 'lib*_static.a' -not -name 'libcudart_static.a' -delete && \
