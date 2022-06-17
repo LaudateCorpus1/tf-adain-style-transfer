@@ -7,7 +7,7 @@ html5lib==0.9999999
 Markdown==2.6.8
 matplotlib==2.0.2
 networkx==1.11
-numpy==1.13.1
+numpy==1.21.0
 olefile==0.44
 Pillow==4.2.1
 protobuf==3.3.0
