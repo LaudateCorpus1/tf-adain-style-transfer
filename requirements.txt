@@ -19,4 +19,4 @@ scikit-image==0.13.0
 scipy==0.19.1
 six==1.10.0
 tensorflow-gpu==1.2.1
-Werkzeug==0.12.2
+Werkzeug==2.2.3
